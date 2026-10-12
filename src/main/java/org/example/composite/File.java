@@ -6,7 +6,7 @@ public class File implements ComponnentFileSystem {
     private String name;
     private  double size ;
 
-    public File(String name, int size) {
+    public File(String name, double size) {
         this.name = name;
         this.size = size;
     }
