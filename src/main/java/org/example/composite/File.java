@@ -16,4 +16,9 @@ public class File implements ComponnentFileSystem {
     public void print() {
         System.out.println("File : "+this.name + "with size : "+  this.size);
     }
+
+    @Override
+    public double getTotalSize() {
+        return this.size;
+    }
 }

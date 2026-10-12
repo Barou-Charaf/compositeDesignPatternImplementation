@@ -26,5 +26,7 @@ public class Main {
 
         root.print();
 
+        System.out.println("file1 size : " + file1.getTotalSize());
+        System.out.println("root total size is : " + root.getTotalSize());
     }
 }

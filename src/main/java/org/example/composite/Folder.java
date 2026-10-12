@@ -29,4 +29,16 @@ public class Folder implements ComponnentFileSystem {
             componnentFileSystem.print();
         }
     }
+
+
+    @Override
+    public double getTotalSize() {
+        double totalSize = 0;
+        if (children.isEmpty()) return 0;
+        for (ComponnentFileSystem componnentFileSystem : this.children) {
+            totalSize += componnentFileSystem.getTotalSize();
+        }
+        return totalSize;
+    }
+
 }
